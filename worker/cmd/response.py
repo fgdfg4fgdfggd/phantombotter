@@ -12,11 +12,11 @@ from disco.api.http import APIException
     400 -> MALFORMED
     403 -> FORBIDDEN
 """
-DEFAULT_MESSAGES = {200: 'Consider it done 👌',
-                    500: 'An error occured in Mee6 land 🤕',
-                    404: 'I didn\'t find anything 😭 .',
-                    400: 'You\'re doing it wrong mate 😅 .',
-                    403: 'Sorry, you are not authorized to use that command 🙄 .'}
+DEFAULT_MESSAGES = {200: 'Consider it done',
+                    500: 'An error occured in Phantom Bot',
+                    404: 'I didn\'t find anything.',
+                    400: 'You\'re doing it wrong.',
+                    403: 'Sorry, you are not authorized to use that command.'}
 
 
 class Response(object):
