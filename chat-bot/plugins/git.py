@@ -3,13 +3,13 @@ import random
 
 class Git(Plugin):
 
-    fancy_name='Git Repo'
+    fancy_name='Site'
 
     async def get_commands(self, server):
         commands = [
             {
-                'name': '!git',
-                'description': 'Links to Mee6\'s Github page.'
+                'name': '!site',
+                'description': 'Links to RCDForunm page.'
             },
         ]
         return commands
@@ -18,15 +18,15 @@ class Git(Plugin):
 
         flavortext = [
             "Glad you asked!",
-            "Hey kid, wanna see some source code?",
+            "Hey kid, wanna see our site?",
             "Thanks for stopping by!",
-            "Here's where the magic happens."
+            "Here's where the RCD Magic happens."
             ]
 
-        if message.content == '!git':
+        if message.content == '!site':
             await self.mee6.send_message(
                 message.channel,
-                '{}\nhttps://github.com/cookkkie/mee6/'.format(
+                '{}\nhttps://rcdforum.com/'.format(
                 random.choice(flavortext)
                 )
              )
